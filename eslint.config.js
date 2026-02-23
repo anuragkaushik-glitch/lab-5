@@ -18,3 +18,5 @@ export default [
     },
   },
 ];
+
+console.log("Testing CI");
