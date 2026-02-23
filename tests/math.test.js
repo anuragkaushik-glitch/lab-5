@@ -10,3 +10,4 @@ test("isEven detects even numbers", () => {
   assert.equal(isEven(10), true);
   assert.equal(isEven(7), false);
 });
+
