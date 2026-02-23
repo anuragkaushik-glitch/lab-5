@@ -13,7 +13,7 @@ jobs:
 
         strategy:
             matrix:
-                node-versions: [18.x, 20.x, 22.x]
+                
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
@@ -22,6 +22,8 @@ jobs:
               with: 
                 node-version: ${{matrix.node-version}}
                 cache: 'npm'
+            - name: Install dependencies
+              run: npm i
             - name: Run Linter
               run: npm run lint
             - name: Run Tests
