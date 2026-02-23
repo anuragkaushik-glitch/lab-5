@@ -2,9 +2,9 @@ name : Integration
 
 on : 
     push :
-        branches: [test-ci] 
+        branches: [main] 
     pull_request :
-        branches :  [test-ci] 
+        branches :  [main] 
 
     workflow_dispatch:
 
