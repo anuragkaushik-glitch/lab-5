@@ -1,9 +1,9 @@
 name: Integration
 on:
   push:
-        branches: [ test-ci-pr ]
+        branches: [ main ]
   pull_request:
-        branches: [ test-ci-pr ]
+        branches: [ main ]
   workflow_dispatch:
 
 jobs:
